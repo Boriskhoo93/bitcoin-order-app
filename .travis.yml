@@ -1,6 +1,7 @@
 language: node_js
-node_js: 
+node_js:
   - node
+
 dist: bionic
 sudo: required
 
@@ -10,13 +11,14 @@ notifications:
       - boris.khoo@ncs.com.sg
     on_success: always
     on_failure: always
+    
 branches:
   only:
    - development
-
+   
 before_script:
   - npm install -g @angular/cli
-  - npm audit fix
+  - npm install -g now
   
 script:
   - ng lint
@@ -29,3 +31,5 @@ deploy:
   local_dir: dist/bitcoin
   on: 
    branch: development
+
+ 
