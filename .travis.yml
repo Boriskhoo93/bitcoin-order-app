@@ -8,7 +8,7 @@ sudo: required
 notifications:
   email:
     recipients:
-      - boris.khoo@ncs.com.sg
+    - boris.khoo@ncs.com.sg
     on_success: always
     on_failure: always
     
