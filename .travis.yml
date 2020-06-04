@@ -22,7 +22,7 @@ before_script:
   
 script:
   - ng lint
-  - ng build --prod --base-href https://github.com/Boriskhoo93/bitcoin-order-app.git
+  - ng build --prod --base-href https://Boriskhoo93.github.io/bitcoin-order-app
 
 deploy:
   provider: pages
